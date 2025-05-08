@@ -1,50 +1,23 @@
-# Welcome to your Expo app 👋
+# 📍 Expo Maps Demo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a quick experiment using **Expo Maps** to render a native Apple Maps view in a React Native app via **Expo**. I played around with markers, annotations, polylines, and camera controls to switch between predefined locations using a simple UI.
 
-## Get started
+## 🔧 Tech Stack
 
-1. Install dependencies
+- **Expo + React Native**
+- **expo-maps** for Apple Maps integration
+- **expo-image** to load a remote image annotation
+- **react-native-safe-area-context** for UI layout
+- **@react-navigation/bottom-tabs** for dynamic padding
 
-   ```bash
-   npm install
-   ```
+## 💡 Features Explored
 
-2. Start the app
+- Apple Maps with custom annotations & polylines
+- Camera movement via refs
+- Buttons to cycle through a list of hardcoded locations
+- Image-based annotation with fallback handling
+- Event logging: map clicks, marker taps, polyline taps
 
-   ```bash
-   npx expo start
-   ```
+## 📦 File of Interest
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+All logic and UI are located in: `/app/(tabs)/index.tsx`
